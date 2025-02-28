@@ -6,7 +6,6 @@ Welcome to the PJ's Café application repository! This project is an ongoing eff
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 
 # About
@@ -30,35 +29,34 @@ PJ's Café application is a prototype developed for a café to enhance the custo
 # Installation 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/your-username/pjs-cafe.git
-    cd pjs-cafe
+   git@github.com:pputtaswamy07/React-NodeJS.git
     ```
-2. **Install dependencies**
+1. **Install Dependencies**
     ```bash
     npm install
     ```
+
 3. **Set up environment variables**
    ```bash
     MONGO_URI=your_mongo_db_connection_string
     ```
-4. **Run the application**
+4. **Run the backend**
    ```bash
-    npm start
+    node app.js
+    ```
+4. **Run the frontend**
+   ```bash
+    npm run dev
     ```
 
-# Usage
-- Visit `http://localhost:3000` to access the homepage.
-- Navigate to `/menu` to view the menu items.
-- Navigate to `/order` to place an order.
-- Navigate to `/reservation` to make a reservation.
-- Navigate to `/reviews` to submit a review.
+ 
+#Future Work
+- mplementing user authentication
+- Adding a payment gateway for online orders
+- Enhancing the reservation system with real-time availability updates
+- Introducing AI-driven recommendations based on user preferences
 
 # Contributing
-We welcome contributions to this project! If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request. Here's how you can contribute:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch-name`.
-3. Make your changes and commit them: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature-branch-name`.
-5. Open a pull request.
+Feel free to contribute to the project by opening issues and submitting pull requests. Ensure that your contributions align with the project's goals and coding standards.
 
 Thank you for your interest in the PJ's Café application!
