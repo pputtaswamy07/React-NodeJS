@@ -20,7 +20,7 @@ React Café application is a prototype developed for a café to enhance the cust
 - **Email Notifications:** (Upcoming) Email confirmations for reservations and orders.
 - **Design:** Figma (for UI/UX planning and future development
 
-# Installation 
+## Installation 
 1. **Clone the repository**
     ```bash
    git@github.com:pputtaswamy07/React-NodeJS.git
@@ -44,7 +44,7 @@ React Café application is a prototype developed for a café to enhance the cust
     ```
 
  
-#Future Work
+##Future Work
 - Implementing user authentication
 - Adding a payment gateway for online orders
 - Enhancing the reservation system with real-time availability updates
