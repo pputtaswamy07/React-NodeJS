@@ -51,7 +51,7 @@ React Café application is a prototype developed for a café to enhance the cust
 
  
 #Future Work
-- mplementing user authentication
+- Implementing user authentication
 - Adding a payment gateway for online orders
 - Enhancing the reservation system with real-time availability updates
 - Introducing AI-driven recommendations based on user preferences
