@@ -25,6 +25,7 @@ React Café application is a prototype developed for a café to enhance the cust
 - **Frontend:** EJS templating engine (can be replaced with other frontend frameworks if needed)
 - **Payment Processing:** Stripe (integration in progress)
 - **Email Notifications:** Nodemailer (integration in progress)
+- **Design:** Figma (for UI/UX planning and future development
 
 # Installation 
 1. **Clone the repository**
