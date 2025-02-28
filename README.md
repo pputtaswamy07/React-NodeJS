@@ -18,13 +18,6 @@ React Café application is a prototype developed for a café to enhance the cust
 - **Review Submission:** Submit reviews and ratings for the café.
 - **Payment Integration:** (Upcoming) Secure online payments via Stripe.
 - **Email Notifications:** (Upcoming) Email confirmations for reservations and orders.
-
-# Technologies
-- **Backend:** Node.js, Express.j
-- **Database:** MongoDB (with Mongoose for object data modeling)
-- **Frontend:** EJS templating engine (can be replaced with other frontend frameworks if needed)
-- **Payment Processing:** Stripe (integration in progress)
-- **Email Notifications:** Nodemailer (integration in progress)
 - **Design:** Figma (for UI/UX planning and future development
 
 # Installation 
