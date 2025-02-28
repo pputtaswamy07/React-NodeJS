@@ -8,10 +8,10 @@ Welcome to the React Café application repository! This project is a modern and 
 - [Installation](#installation)
 - [Contributing](#contributing)
 
-# About
+## About
 React Café application is a prototype developed for a café to enhance the customer experience by providing an easy-to-use interface for browsing the menu, ordering items, making reservations, and leaving reviews. This application is currently under development and will continually be updated with new features and improvements.
 
-# Features
+## Features
 - **Menu Browsing:** View the café's beverages and pastries.
 - **Order Placement:**  Place orders for items available on the menu.
 - **Reservation System:** Make reservations for a table at the café.
@@ -50,7 +50,7 @@ React Café application is a prototype developed for a café to enhance the cust
 - Enhancing the reservation system with real-time availability updates
 - Introducing AI-driven recommendations based on user preferences
 
-# Contributing
+## Contributing
 Feel free to contribute to the project by opening issues and submitting pull requests. Ensure that your contributions align with the project's goals and coding standards.
 
 Thank you for your interest in my project!!
