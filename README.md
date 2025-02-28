@@ -9,7 +9,7 @@ Welcome to the React Café application repository! This project is a modern and 
 - [Contributing](#contributing)
 
 # About
-PJ's Café application is a prototype developed for a café to enhance the customer experience by providing an easy-to-use interface for browsing the menu, ordering items, making reservations, and leaving reviews. This application is currently under development and will continually be updated with new features and improvements.
+React Café application is a prototype developed for a café to enhance the customer experience by providing an easy-to-use interface for browsing the menu, ordering items, making reservations, and leaving reviews. This application is currently under development and will continually be updated with new features and improvements.
 
 # Features
 - **Menu Browsing:** View the café's beverages and pastries.
