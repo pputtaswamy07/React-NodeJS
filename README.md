@@ -1,5 +1,5 @@
-# PJ's Café Application
-Welcome to the PJ's Café application repository! This project is an ongoing effort to create a robust and user-friendly web application for managing various aspects of PJ's Café, including viewing the menu, placing orders, making reservations, and submitting reviews.
+# React Café Application
+Welcome to the React Café application repository! This project is a modern and interactive web application built with React and Material UI, allowing users to order food and make reservations conveniently. The project aims to provide a seamless user experience for customers looking to explore the cafe's menu, place orders, and reserve tables.
 
 ## Table of Contents
 - [About](#about)
