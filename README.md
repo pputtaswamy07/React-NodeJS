@@ -59,4 +59,4 @@ React Café application is a prototype developed for a café to enhance the cust
 # Contributing
 Feel free to contribute to the project by opening issues and submitting pull requests. Ensure that your contributions align with the project's goals and coding standards.
 
-Thank you for your interest in the PJ's Café application!
+Thank you for your interest in my project!!
