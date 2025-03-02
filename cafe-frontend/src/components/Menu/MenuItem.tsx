@@ -1,6 +1,8 @@
+// MenuItem.tsx
 import React from "react";
 import { Card, CardContent, CardMedia, Typography, Box } from "@mui/material";
 import { MenuItem as MenuItemType } from "../../types";
+import { styles } from "./MenuItem.styles";
 
 interface MenuItemProps {
   item: MenuItemType;
@@ -8,27 +10,26 @@ interface MenuItemProps {
 
 const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
   return (
-    <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
+    <Card sx={styles.card}>
       <CardMedia
         component="img"
         height="200"
         image={item.imageUrl || "/api/placeholder/400/140"}
         alt={item.name}
+        sx={styles.media}
       />
       <CardContent>
         <Typography gutterBottom variant="h6" component="h2">
           {item.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={styles.description}
+        >
           {item.description}
         </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
+        <Box sx={styles.priceContainer}>
           <Typography variant="h6" color="primary">
             ${item.price.toFixed(2)}
           </Typography>
