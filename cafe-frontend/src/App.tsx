@@ -1,22 +1,32 @@
 import React from "react";
-import {
-  ThemeProvider,
-  createTheme,
-  CssBaseline,
-  Container,
-} from "@mui/material";
+import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuList from "./components/Menu/MenuList";
+import HomePage from "./components/Home/HomePage";
+import ReservationPage from "./components/Reservation/ReservationPage";
 import { MenuProvider } from "./contexts/MenuContext";
+import Navbar from "./components/lay/Navbar";
+
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#ea1066",
+      main: "#5f2d06",
     },
     secondary: {
-      main: "#f50057",
+      main: "#d0b8a6",
     },
     background: {
       default: "#f5f5f5",
+    },
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          margin: 0,
+          padding: 0,
+        },
+      },
     },
   },
 });
@@ -26,9 +36,14 @@ const App: React.FC = () => {
     <MenuProvider>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Container component="main" sx={{ mt: 4, mb: 4 }}>
-          <MenuList />
-        </Container>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/menu" element={<MenuList />} />
+            <Route path="/reservation" element={<ReservationPage />} />
+          </Routes>
+        </BrowserRouter>
       </ThemeProvider>
     </MenuProvider>
   );
