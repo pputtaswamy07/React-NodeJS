@@ -38,7 +38,8 @@ app.use(passport.session());
 
 // Routes
 app.use("/", require("./routes/index"));
-app.use("/api/menu", require("./routes/menu")); // Add menu routes
+app.use("/api/menu", require("./routes/menu"));
+app.use("/api/reservation", require("./routes/reservation")); // Add menu routes
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
