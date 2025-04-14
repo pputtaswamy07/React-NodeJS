@@ -71,11 +71,11 @@ const HomePage: React.FC = () => {
               src="/images/coffee_theme.jpg"
               alt="Jasmine Cafe"
               style={{
-                width: "100%",
+                width: "50%",
                 height: "auto",
                 maxHeight: "400px",
                 objectFit: "cover",
-                borderRadius: "250px",
+                borderRadius: "300px",
                 boxShadow: "0 4px 6px rgba(233, 138, 50, 0.1)",
               }}
             />
