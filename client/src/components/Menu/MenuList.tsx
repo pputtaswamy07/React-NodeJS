@@ -17,9 +17,11 @@ import MenuItem from "./MenuItem";
 import { useMenu } from "../../contexts/MenuContext";
 
 interface MenuItem {
+  _id: string;
   category: string;
   name: string;
   description: string;
+  price: number;
 }
 
 const MenuList: React.FC = () => {
@@ -28,7 +30,7 @@ const MenuList: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
  */
   const handleCategoryChange = (
-    event: React.SyntheticEvent,
+    _event: React.SyntheticEvent,
     newValue: string
   ) => {
     setCategory(newValue);
