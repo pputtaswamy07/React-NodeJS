@@ -25,7 +25,7 @@ mongoose.connect(source);
 app.use(
   cors({
     origin: [
-      "http://localhost:3000",
+      "http://localhost:5173",
       process.env.FRONTEND_URL, // set this in Railway variables
     ],
     credentials: true,

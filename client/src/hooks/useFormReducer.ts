@@ -1,11 +1,12 @@
 import { useReducer } from "react";
 
 export type FormState = {
+  time: unknown;
+  date: unknown;
   name: string;
   email: string;
   phone: string;
-  /* date: string;
-  time: string; */
+  numberOfGuests: string;
 };
 
 export type FormAction =
@@ -16,8 +17,9 @@ export const initialFormState: FormState = {
   name: "",
   email: "",
   phone: "",
-  /*   date: "",
-  time: "", */
+  date: "",
+  time: "",
+  numberOfGuests: "",
 };
 
 const formReducer = (state: FormState, action: FormAction): FormState => {

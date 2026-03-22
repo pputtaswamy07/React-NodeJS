@@ -58,6 +58,7 @@ const ReservationPage: React.FC = () => {
     { name: "name", label: "Full Name", type: "text" },
     { name: "email", label: "Email", type: "email" },
     { name: "phone", label: "Phone number", type: "text" },
+    { name: "number of seats", label: "Number of Seats", type: "number" },
   ];
 
   return (
@@ -86,7 +87,7 @@ const ReservationPage: React.FC = () => {
               </Grid>
             ))}
 
-            {/*  <Grid item xs={6}>
+            <Grid item xs={6}>
               <TextField
                 fullWidth
                 label="Date"
@@ -109,7 +110,7 @@ const ReservationPage: React.FC = () => {
                 onChange={handleChange}
                 required
               />
-            </Grid> */}
+            </Grid>
 
             <Grid item xs={12}>
               <Button
