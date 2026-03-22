@@ -5,30 +5,43 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
-const dotenv = require("dotenv");
 require("dotenv").config();
 
 const source = process.env.MONGO_URI;
+
+if (!source) {
+  console.error(
+    "❌ MONGO_URI is not defined. Check your environment variables."
+  );
+  process.exit(1);
+}
+
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect(source, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(source);
 
-// Middleware
-app.use(cors()); // Add CORS support
-app.use(bodyParser.json()); // Add JSON support
+// CORS — allow local dev and Vercel frontend
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      process.env.FRONTEND_URL, // set this in Railway variables
+    ],
+    credentials: true,
+  })
+);
+
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 // Express session
 app.use(
   session({
-    secret: "secret",
-    resave: true,
-    saveUninitialized: true,
+    secret: process.env.SESSION_SECRET || "secret",
+    resave: false,
+    saveUninitialized: false,
   })
 );
 
@@ -39,7 +52,7 @@ app.use(passport.session());
 // Routes
 app.use("/", require("./routes/index"));
 app.use("/api/menu", require("./routes/menu"));
-app.use("/api/reservation", require("./routes/reservation")); // Add menu routes
+app.use("/api/reservation", require("./routes/reservation"));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
